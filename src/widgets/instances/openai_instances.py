@@ -434,6 +434,12 @@ class Venice(BaseInstance):
         if 'seed' in self.properties:
             del self.properties['seed']
 
+class Obscurify(BaseInstance):
+    instance_type = 'obscurify'
+    instance_type_display = 'Obscurify.ai'
+    instance_url = 'https://obscurify.ai/v1/'
+    description = _('Privacy-focused OpenAI-compatible API with no-email accounts')
+
 class Deepseek(BaseInstance):
     instance_type = 'deepseek'
     instance_type_display = 'Deepseek'
